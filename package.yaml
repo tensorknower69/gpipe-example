@@ -8,6 +8,9 @@ maintainer: "tensorknower69 <62006583+tensorknower69@users.noreply.github.com>"
 name: gpipe-example
 version: 0.1.0.0
 
+extra-source-files:
+  - README.md
+
 executables:
   gpipe-example:
     main: Main.hs

@@ -6,17 +6,13 @@
 
 module Main where
 
-import Control.Applicative
 import Control.Lens
 import Control.Monad
-import Control.Monad.Exception
 import Control.Monad.IO.Class
 import Control.Monad.Trans.Maybe
-import Data.Function
 import Data.Word
 import Graphics.GPipe
-import Linear
-import System.Random hiding (Uniform)
+import System.Random
 import qualified Graphics.GPipe.Context.GLFW as GLFW
 
 getDualKeyState :: (MonadIO m, Num a) => Window os c ds -> GLFW.Key -> GLFW.Key -> ContextT GLFW.Handle os m (Maybe a)
@@ -158,8 +154,8 @@ main = do
 		writeBuffer vertexBuffer 0
 			[ (V3 (-0.5)   0.5   0.0, V2 0 0)
 			, (V3 (-0.5) (-0.5)  0.0, V2 0 1)
-			, (V3   0.5	0.5   0.0, V2 1 0)
-			, (V3   0.5	0.5   0.0, V2 1 0)
+			, (V3   0.5    0.5   0.0, V2 1 0)
+			, (V3   0.5    0.5   0.0, V2 1 0)
 			, (V3 (-0.5) (-0.5)  0.0, V2 0 1)
 			, (V3   0.5  (-0.5)  0.0, V2 1 1)
 			]

@@ -1,0 +1,10 @@
+resolver: lts-16.21
+packages:
+  - .
+
+extra-deps:
+  - git: https://github.com/tobbebex/GPipe-Core
+    subdirs:
+      - GPipe-Core
+    commit: 4607e2c31d5beec30f2a918ab8ad48472ca236b7
+  - GPipe-GLFW-1.4.1.4@sha256:66e56b598856a016129ed05dff056bdf589815eac27ff06355cf7a71e98c19de,1999

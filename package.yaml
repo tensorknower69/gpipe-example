@@ -1,0 +1,21 @@
+name: gpipe-example
+version: 0.1.0.0
+license: MIT
+github: tensorknower69/gpipe-example
+
+executables:
+  gpipe-example:
+    main: Main.hs
+    source-dirs: app
+    dependencies:
+      - base >= 4.12
+      - GPipe 
+      - GPipe-GLFW
+      - random
+      - linear
+      - transformers
+      - exceptions
+      - lens
+    ghc-options:
+      - -Wall
+      - -Wno-tabs

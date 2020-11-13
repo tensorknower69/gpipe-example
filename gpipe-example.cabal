@@ -1,21 +1,35 @@
-name: gpipe-example
-version: 0.1.0.0
-build-type: Simple
-cabal-version: 1.10
-license: MIT
-license-file: LICENSE
+cabal-version: 1.12
 
-executable gpipe-example-exe
+-- This file has been generated from package.yaml by hpack version 0.34.2.
+--
+-- see: https://github.com/sol/hpack
+
+name:           gpipe-example
+version:        0.1.0.0
+homepage:       https://github.com/tensorknower69/gpipe-example#readme
+bug-reports:    https://github.com/tensorknower69/gpipe-example/issues
+license:        MIT
+license-file:   LICENSE
+build-type:     Simple
+
+source-repository head
+  type: git
+  location: https://github.com/tensorknower69/gpipe-example
+
+executable gpipe-example
   main-is: Main.hs
-  hs-source-dirs: ./.
+  other-modules:
+      Paths_gpipe_example
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wno-tabs
   build-depends:
-    base >=4.12,
-    GPipe >=2,
-    GPipe-GLFW,
-    random,
-    linear,
-    transformers,
-    exception-transformers,
-    lens
-  ghc-options: -Wno-tabs
+      GPipe
+    , GPipe-GLFW
+    , base >=4.12
+    , exceptions
+    , lens
+    , linear
+    , random
+    , transformers
   default-language: Haskell2010
